@@ -55,10 +55,10 @@ public class MainActivity extends BaseCompatActivity
         mTabLayout = (TabLayout) this.findViewById(R.id.tab_layout);
         mViewPager = (ViewPager) this.findViewById(R.id.view_pager);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, mDrawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.setDrawerListener(toggle);
-        toggle.syncState();
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+//                this, mDrawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+//        mDrawerLayout.setDrawerListener(toggle);
+//        toggle.syncState();
         intNavigationView();
         mAdapter = new FragmentAdapter(getSupportFragmentManager());
         mPresenter = new CategoryPresenterImpl(this);
@@ -136,7 +136,8 @@ public class MainActivity extends BaseCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else
+            if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
