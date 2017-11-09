@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 import org.kobehjk.net.entity.MediaEntity;
 import org.kobehjk.net.support.recyclerview.MGridLayoutManager;
 import org.kobehjk.net.ui.activity.MainActivity;
@@ -34,6 +38,10 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
     private HomeMediasPresenter mPresenter;
     private int id;
     private int type;
+
+
+    private InterstitialAd mInterstitialAd;
+
 
     public static Fragment newInstance(int id, int type) {
         Bundle bundle = new Bundle();
@@ -75,6 +83,17 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new MGridLayoutManager(getActivity(), GRID_COLUMN, mAdapter));
         autoRefresh();
+        mInterstitialAd = new InterstitialAd(mainActivity);
+        mInterstitialAd.setAdUnitId("ca-app-pub-2364076622212252/1238664018");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                // Load the next interstitial.
+                mInterstitialAd.loadAd(new AdRequest.Builder().build());
+            }
+
+        });
     }
 
     private void autoRefresh() {
@@ -113,7 +132,15 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
 
     @Override
     public void onItemClick(MediaEntity entity) {
-        startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
+        if (mInterstitialAd.isLoaded()&& mainActivity.watchCount == 4) {
+            mainActivity.watchCount = 0;
+            startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
+            mInterstitialAd.show();
+        } else {
+            mainActivity.watchCount++;
+            startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
+        }
+
     }
 
 

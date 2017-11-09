@@ -36,7 +36,7 @@
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/imageView_avatar"
             android:layout_toRightOf="@+id/imageView_avatar"
-            android:text="大煞笔"
+            android:text=""
             android:textColor="@android:color/white" />
 
         <TextView
@@ -47,7 +47,7 @@
             android:layout_alignLeft="@+id/textView_screen_name"
             android:layout_alignStart="@+id/textView_screen_name"
             android:layout_marginBottom="5dp"
-            android:text="14-20 13- 26"
+            android:text=""
             android:textColor="@android:color/white"
             android:textSize="10dp" />
 
@@ -91,7 +91,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="130dp"
         android:layout_below="@+id/videoControllerView"
         android:background="?attr/colorPrimary"
         android:padding="5dp">
@@ -100,13 +100,14 @@
             android:id="@+id/textView_caption"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="aaaa"
+            android:text=""
             android:textColor="@color/white"
             android:textSize="12sp" />
 
         <LinearLayout
+            android:id="@+id/infoText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_below="@+id/textView_caption"
             android:layout_marginTop="5dp"
             android:background="?attr/colorPrimaryDark"
@@ -219,6 +220,20 @@
                     android:background="@color/white" />
             </RelativeLayout>
         </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/infoText">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-2364076622212252/8681560832">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
 
     </RelativeLayout>
 

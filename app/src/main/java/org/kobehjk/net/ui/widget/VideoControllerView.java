@@ -20,9 +20,7 @@ import io.vov.vitamio.MediaPlayer;
 import io.vov.vitamio.widget.VideoView;
 import kobehjk.org.demo.R;
 
-/**
- * Created by sunger on 15/11/7.
- */
+
 public class VideoControllerView extends FrameLayout implements View.OnTouchListener, Slider.OnValueChangedListener, MediaPlayer.OnBufferingUpdateListener, MediaPlayer.OnPreparedListener, MediaPlayer.OnCompletionListener {
     private static final long delayMillis = 1500;
     private VideoView mVideoView;

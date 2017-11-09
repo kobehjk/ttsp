@@ -28,11 +28,17 @@ import kobehjk.org.demo.R;
  */
 public class BaseCompatActivity extends AppCompatActivity {
     protected Handler taskHandler = new Handler();
+    public int watchCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setStateBarColor(R.color.colorPrimaryDark);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     protected void setStateBarColor(int resId) {

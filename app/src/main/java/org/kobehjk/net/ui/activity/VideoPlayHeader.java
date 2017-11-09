@@ -1,11 +1,15 @@
 package org.kobehjk.net.ui.activity;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import org.kobehjk.net.app.AppUtils;
 import org.kobehjk.net.entity.MediaEntity;
@@ -15,6 +19,11 @@ import org.kobehjk.net.widget.TextImageView;
 
 import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
+
+import android.util.Log;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 /**
  * Created by sunger on 2015/12/1.
@@ -35,8 +44,11 @@ public class VideoPlayHeader {
     private TextView mTextViewRepeat;
     private Activity mActivity;
 
+    private AdView mAdView;
+
     public VideoPlayHeader(Activity activity, View view) {
         this.mActivity = activity;
+        initAdView(activity,view);
         mBgaBadgeImageView = (BGABadgeImageView) view.findViewById(R.id.imageView_avatar);
         mTextViewScreenName = (TextView) view.findViewById(R.id.textView_screen_name);
         mTextViewCreatedAt = (TextView) view.findViewById(R.id.textView_created_at);
@@ -49,6 +61,7 @@ public class VideoPlayHeader {
         mImageViewThumbUp = (ImageView) view.findViewById(R.id.imageView_thumb_up);
         mTextViewThumbUp = (TextView) view.findViewById(R.id.textView_thumb_up);
         mTextViewRepeat = (TextView) view.findViewById(R.id.textView_repeat);
+
     }
 
     public void bindData(final MediaEntity mediaEntity) {
@@ -89,7 +102,14 @@ public class VideoPlayHeader {
         return mVideoControllerView;
     }
 
-
+    private void initAdView(Activity activity, View view){
+        mAdView = (AdView)view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("F3FDA5105C379388487C4674BE6D9FD9")
+                .build();
+        Log.d("kobehjkddsp",String.valueOf(adRequest.isTestDevice(activity)) );
+        mAdView.loadAd(adRequest);
+    }
 
 
 

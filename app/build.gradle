@@ -43,6 +43,15 @@ android {
 
 }
 
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -60,4 +69,5 @@ dependencies {
     compile project(':library')
     compile project(':vitamio')
     compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.android.gms:play-services-ads:11.4.2'
 }

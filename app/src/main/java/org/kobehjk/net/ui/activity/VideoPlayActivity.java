@@ -37,6 +37,7 @@ public class VideoPlayActivity extends BaseCompatActivity implements PlayVideoVi
     private int medias_id;
     private int current_comment_page = 1;
 
+
     public static Intent createIntent(Context context, int id) {
         Intent intent = new Intent(context, VideoPlayActivity.class);
         intent.putExtra(MEDIAS_ID_KEY, id);
@@ -52,8 +53,9 @@ public class VideoPlayActivity extends BaseCompatActivity implements PlayVideoVi
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_video_play);
         View view = findView(R.id.appbar);
-        int width = DeviceUtils.getScreenWidth(this) + DensityUtil.dip2px(this, 110) + getActionBarSize();
-        CoordinatorLayout.LayoutParams params = new CoordinatorLayout.LayoutParams(CoordinatorLayout.LayoutParams.MATCH_PARENT, width);
+//        int height = DeviceUtils.getScreenWidth(this) + DensityUtil.dip2px(this, 110) + getActionBarSize();
+        int height = DeviceUtils.getScreenWidth(this) + DensityUtil.dip2px(this, 150) + getActionBarSize();
+        CoordinatorLayout.LayoutParams params = new CoordinatorLayout.LayoutParams(CoordinatorLayout.LayoutParams.MATCH_PARENT, height);
         view.setLayoutParams(params);
         medias_id = getIntent().getIntExtra(MEDIAS_ID_KEY, -1);
         mPresenter = new PlayVideoPresenterImpl(this);
