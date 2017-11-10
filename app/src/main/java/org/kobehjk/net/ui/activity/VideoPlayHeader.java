@@ -105,9 +105,8 @@ public class VideoPlayHeader {
     private void initAdView(Activity activity, View view){
         mAdView = (AdView)view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice("F3FDA5105C379388487C4674BE6D9FD9")
                 .build();
-        Log.d("kobehjkddsp",String.valueOf(adRequest.isTestDevice(activity)) );
+//        Log.d("kobehjkddsp",String.valueOf(adRequest.isTestDevice(activity)) );
         mAdView.loadAd(adRequest);
     }
 
