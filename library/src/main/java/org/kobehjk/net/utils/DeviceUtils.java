@@ -32,12 +32,13 @@ public class DeviceUtils {
      * @return
      */
     public static String getDeviceId() {
-        String deviceId = telephonyManager.getDeviceId();
-        if (TextUtils.isEmpty(deviceId)) {
-            deviceId = String.valueOf(System
-                    .currentTimeMillis());
-        }
-        return deviceId;
+//        String deviceId = telephonyManager.getDeviceId();
+//        if (TextUtils.isEmpty(deviceId)) {
+//            deviceId = String.valueOf(System
+//                    .currentTimeMillis());
+//        }
+//        return deviceId;
+        return "";
     }
 
 

@@ -17,6 +17,7 @@ import org.kobehjk.net.utils.DataTypeUtils;
 import org.kobehjk.net.utils.MediaPlayerUtils;
 
 import io.vov.vitamio.MediaPlayer;
+import io.vov.vitamio.Vitamio;
 import io.vov.vitamio.widget.VideoView;
 import kobehjk.org.demo.R;
 
@@ -57,6 +58,7 @@ public class VideoControllerView extends FrameLayout implements View.OnTouchList
         View v = LayoutInflater.from(context).inflate(R.layout.view_video_controller, null);
         addView(v);
         mVideoView = findView(R.id.videoView);
+        Vitamio.isInitialized(context);
         mVideoView.setOnTouchListener(this);
         mVideoView.setOnPreparedListener(this);
         mVideoView.setOnBufferingUpdateListener(this);

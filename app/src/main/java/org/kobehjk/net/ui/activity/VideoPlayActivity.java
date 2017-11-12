@@ -25,7 +25,7 @@ import org.kobehjk.net.utils.DeviceUtils;
 
 import java.util.List;
 
-import io.vov.vitamio.LibsChecker;
+//import io.vov.vitamio.LibsChecker;
 import kobehjk.org.demo.R;
 
 public class VideoPlayActivity extends BaseCompatActivity implements PlayVideoView, SwipeRefreshLayout.OnRefreshListener, CommentsAdapter.OnCommentItemClickListener {
@@ -48,8 +48,8 @@ public class VideoPlayActivity extends BaseCompatActivity implements PlayVideoVi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (!LibsChecker.checkVitamioLibs(this))
-            return;
+//        if (!LibsChecker.checkVitamioLibs(this))
+//            return;
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_video_play);
         View view = findView(R.id.appbar);

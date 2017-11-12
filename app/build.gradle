@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -21,7 +20,7 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file("kobehjk.jks")
+            storeFile file("/Users/hejinkun/Documents/GitHub/ttsp/kobehjk.jks")
             storePassword "123456"
             keyAlias "kobehjk"
             keyPassword "123456"
@@ -67,7 +66,7 @@ dependencies {
     compile 'com.github.dmytrodanylyk.android-process-button:library:1.0.4'
     compile project(':MaterialDesign')
     compile project(':library')
-    compile project(':vitamio')
-    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile project(':VitamioLibrary5.0')
+//    compile 'com.umeng.analytics:analytics:latest.integration'
     compile 'com.google.android.gms:play-services-ads:11.4.2'
 }
