@@ -37,7 +37,7 @@ public class MainActivity extends BaseCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, CategoryView {
     private Toolbar mToolbar;
     private NavigationView mNavigationView;
-    private DrawerLayout mDrawerLayout;
+//    private DrawerLayout mDrawerLayout;
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private FragmentAdapter mAdapter;
@@ -54,7 +54,7 @@ public class MainActivity extends BaseCompatActivity
         setSupportActionBar(mToolbar);
         mTabLayout = (TabLayout) this.findViewById(R.id.tab_layout);
         mViewPager = (ViewPager) this.findViewById(R.id.view_pager);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 //        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
 //                this, mDrawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 //        mDrawerLayout.setDrawerListener(toggle);

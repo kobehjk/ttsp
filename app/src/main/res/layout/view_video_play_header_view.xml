@@ -230,7 +230,7 @@
                 android:id="@+id/adView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                ads:adSize = "SMART_BANNER"
+                ads:adSize = "BANNER"
                 ads:adUnitId="ca-app-pub-2364076622212252/8681560832">
             </com.google.android.gms.ads.AdView>
         </RelativeLayout>
