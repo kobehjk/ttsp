@@ -5,7 +5,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 
 /**
- * Created by sunger on 15/11/15.
+ * Created by kobehjk on 15/11/15.
  */
 public class ClipboardUtils {
     public static void copy(Context context,String str) {

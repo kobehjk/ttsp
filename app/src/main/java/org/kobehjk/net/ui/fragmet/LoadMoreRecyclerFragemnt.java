@@ -17,7 +17,7 @@ import kobehjk.org.demo.R;
 
 
 /**
- * Created by sunger on 2015/11/20.
+ * Created by kobehjk on 2015/11/20.
  */
 public abstract class LoadMoreRecyclerFragemnt<T> extends BaseFragment {
     protected static final int DEF_DELAY = (int) (1 * 1000);

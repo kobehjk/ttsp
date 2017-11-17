@@ -14,7 +14,7 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 15/11/22.
+ * Created by kobehjk on 15/11/22.
  */
 public class UserInfoHeader implements View.OnClickListener {
     protected Activity mActivity;

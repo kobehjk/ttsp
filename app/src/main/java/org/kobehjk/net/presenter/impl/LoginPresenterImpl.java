@@ -10,7 +10,7 @@ import org.kobehjk.net.presenter.LoginPresenter;
 import org.kobehjk.net.support.okhttp.callback.ResultCallback;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public class LoginPresenterImpl implements LoginPresenter {
 

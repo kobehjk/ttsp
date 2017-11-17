@@ -3,7 +3,7 @@ package org.kobehjk.net.entity;
 import java.io.Serializable;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public class OauthUserEntity implements Serializable {
 

@@ -1,7 +1,7 @@
 package org.kobehjk.net.presenter;
 
 /**
- * Created by sunger on 2015/11/18.
+ * Created by kobehjk on 2015/11/18.
  */
 public interface SignUpPresenter {
     void signUp(String phone, String pwd, String verify_code);

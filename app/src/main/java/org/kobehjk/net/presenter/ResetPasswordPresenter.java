@@ -1,7 +1,7 @@
 package org.kobehjk.net.presenter;
 
 /**
- * Created by sunger on 2015/11/19.
+ * Created by kobehjk on 2015/11/19.
  */
 public interface ResetPasswordPresenter {
 

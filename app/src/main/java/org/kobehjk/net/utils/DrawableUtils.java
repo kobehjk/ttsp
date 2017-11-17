@@ -8,7 +8,7 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import org.kobehjk.net.app.App;
 
 /**
- * Created by sunger on 15/11/29.
+ * Created by kobehjk on 15/11/29.
  */
 public class DrawableUtils {
 

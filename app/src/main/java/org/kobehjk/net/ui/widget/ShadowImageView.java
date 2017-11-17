@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 /**
- * Created by sunger on 15/11/21.
+ * Created by kobehjk on 15/11/21.
  */
 public class ShadowImageView extends ImageView {
     public ShadowImageView(Context context, AttributeSet attrs) {

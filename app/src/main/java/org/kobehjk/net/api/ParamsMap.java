@@ -8,7 +8,7 @@ import org.kobehjk.net.utils.DeviceUtils;
 import java.util.HashMap;
 
 /**
- * Created by sunger on 15/11/21.
+ * Created by kobehjk on 15/11/21.
  */
 public class ParamsMap extends HashMap<String, String> {
     public ParamsMap() {

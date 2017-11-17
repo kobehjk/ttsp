@@ -11,7 +11,7 @@ import org.kobehjk.net.view.FriendshipsView;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/11/30.
+ * Created by kobehjk on 2015/11/30.
  */
 public class FriendshipsPresenterImpl implements FriendshipsPresenter {
     private FriendshipsModel model;

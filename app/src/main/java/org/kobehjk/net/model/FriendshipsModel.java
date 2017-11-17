@@ -10,7 +10,7 @@ import org.kobehjk.net.support.okhttp.request.OkHttpRequest;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/11/30.
+ * Created by kobehjk on 2015/11/30.
  */
 public class FriendshipsModel{
     public OkHttpRequest getFriends(String uid, int page, ResultCallback<List<SimpleUserEntity>> callback) {

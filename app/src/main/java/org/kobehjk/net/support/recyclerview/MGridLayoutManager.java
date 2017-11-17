@@ -6,7 +6,7 @@ import android.support.v7.widget.GridLayoutManager;
 import org.kobehjk.net.ui.widget.refresh.BaseLoadMoreRecyclerAdapter;
 
 /**
- * Created by sunger on 2015/12/3.
+ * Created by kobehjk on 2015/12/3.
  */
 public class MGridLayoutManager extends GridLayoutManager {
 

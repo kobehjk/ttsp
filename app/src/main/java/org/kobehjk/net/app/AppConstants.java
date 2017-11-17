@@ -1,7 +1,7 @@
 package org.kobehjk.net.app;
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class AppConstants {
 

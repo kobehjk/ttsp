@@ -3,7 +3,7 @@ package org.kobehjk.net.utils;
 import android.content.Context;
 
 /**
- * Created by sunger on 15/11/8.
+ * Created by kobehjk on 15/11/8.
  */
 public class DensityUtil {
     /**

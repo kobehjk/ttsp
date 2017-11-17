@@ -14,7 +14,7 @@ import java.util.List;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/12/3.
+ * Created by kobehjk on 2015/12/3.
  */
 public abstract class RefreshAndLoadFragment<T> extends LoadMoreRecyclerFragemnt implements SwipeRefreshLayout.OnRefreshListener {
     protected final static int STATE_REFRESH = 2;

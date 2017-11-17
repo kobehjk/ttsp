@@ -1,7 +1,7 @@
 package org.kobehjk.net.ui.adapter;
 
 /**
- * Created by sunger on 2015/10/23.
+ * Created by kobehjk on 2015/10/23.
  */
 
 import android.support.v4.app.Fragment;

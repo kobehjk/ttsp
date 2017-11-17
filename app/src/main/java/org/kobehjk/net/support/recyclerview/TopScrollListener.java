@@ -4,7 +4,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * Created by sunger on 2015/12/3.
+ * Created by kobehjk on 2015/12/3.
  */
 public abstract class TopScrollListener extends RecyclerView.OnScrollListener {
     private boolean hasPlay = false;

@@ -24,7 +24,7 @@ import kobehjk.org.demo.R;
 
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class BaseCompatActivity extends AppCompatActivity {
     protected Handler taskHandler = new Handler();

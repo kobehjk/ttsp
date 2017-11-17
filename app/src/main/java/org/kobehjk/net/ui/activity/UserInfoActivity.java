@@ -17,7 +17,7 @@ import org.kobehjk.net.app.App;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/20.
+ * Created by kobehjk on 2015/11/20.
  */
 public class UserInfoActivity extends BaseCompatActivity {
     private UserEntity mUserEntity;

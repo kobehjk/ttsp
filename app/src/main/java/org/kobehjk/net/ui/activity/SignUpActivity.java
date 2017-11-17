@@ -20,7 +20,7 @@ import org.kobehjk.net.view.SignUpView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public class SignUpActivity extends BaseCompatActivity implements SignUpView, View.OnClickListener {
     private static final int DELAY_MILLIS = 1 * 1000;

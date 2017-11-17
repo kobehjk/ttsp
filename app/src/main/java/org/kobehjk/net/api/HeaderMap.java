@@ -7,7 +7,7 @@ import org.kobehjk.net.app.AppConstants;
 import java.util.HashMap;
 
 /**
- * Created by sunger on 15/11/21.
+ * Created by kobehjk on 15/11/21.
  */
 public class HeaderMap extends HashMap<String, String> {
     public HeaderMap() {

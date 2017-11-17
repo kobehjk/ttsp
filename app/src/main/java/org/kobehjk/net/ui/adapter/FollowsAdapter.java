@@ -18,7 +18,7 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/30.
+ * Created by kobehjk on 2015/11/30.
  */
 public class FollowsAdapter extends BaseLoadMoreRecyclerAdapter<FollowEntity, FollowsAdapter.ViewHolder> {
     private Activity mActivity;

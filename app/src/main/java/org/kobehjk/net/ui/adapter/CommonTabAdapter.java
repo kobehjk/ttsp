@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/11/20.
+ * Created by kobehjk on 2015/11/20.
  */
 public class CommonTabAdapter extends FragmentStatePagerAdapter {
 

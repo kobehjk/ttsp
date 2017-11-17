@@ -15,7 +15,7 @@ import org.kobehjk.net.app.App;
 import cn.bingoogolapple.badgeview.BGABadgeImageView;
 
 /**
- * Created by sunger on 2015/10/29.
+ * Created by kobehjk on 2015/10/29.
  */
 public class GlideUtils {
     /**

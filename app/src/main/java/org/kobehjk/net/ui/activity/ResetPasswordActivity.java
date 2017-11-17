@@ -20,7 +20,7 @@ import org.kobehjk.net.utils.WidgetUtils;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/20.
+ * Created by kobehjk on 2015/11/20.
  */
 public class ResetPasswordActivity extends BaseCompatActivity implements ResetPasswordView, View.OnClickListener {
     private static final int DELAY_MILLIS = 1 * 1000;

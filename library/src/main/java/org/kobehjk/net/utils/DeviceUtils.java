@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  * 使用时必须先初始化
  */
 public class DeviceUtils {

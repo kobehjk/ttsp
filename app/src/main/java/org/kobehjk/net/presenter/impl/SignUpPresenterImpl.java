@@ -12,7 +12,7 @@ import org.kobehjk.net.view.SignUpView;
 import org.kobehjk.net.support.okhttp.callback.ResultCallback;
 
 /**
- * Created by sunger on 2015/11/18.
+ * Created by kobehjk on 2015/11/18.
  */
 public class SignUpPresenterImpl implements SignUpPresenter {
 

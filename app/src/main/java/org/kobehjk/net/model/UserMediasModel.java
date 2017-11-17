@@ -10,7 +10,7 @@ import org.kobehjk.net.support.okhttp.request.OkHttpRequest;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/12/1.
+ * Created by kobehjk on 2015/12/1.
  */
 public class UserMediasModel {
     public OkHttpRequest getMedias(int uid, int page, ResultCallback<List<MediaEntity>> callback) {

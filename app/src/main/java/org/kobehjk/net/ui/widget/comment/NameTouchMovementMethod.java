@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/11/12.
+ * Created by kobehjk on 2015/11/12.
  */
 public class NameTouchMovementMethod extends LinkMovementMethod {
 

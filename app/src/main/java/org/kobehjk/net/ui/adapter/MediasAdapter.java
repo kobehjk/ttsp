@@ -19,7 +19,7 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/10/28.
+ * Created by kobehjk on 2015/10/28.
  */
 public class MediasAdapter extends BaseLoadMoreRecyclerAdapter<MediaEntity, MediasAdapter.ViewHolder> {
     private OnItemClickListener onItemClickListener;

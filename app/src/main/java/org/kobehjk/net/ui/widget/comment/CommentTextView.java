@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by sunger on 15/11/11.
+ * Created by kobehjk on 15/11/11.
  */
 public class CommentTextView extends TextView {
     private static final String REPLE_FLAG_START = "回复@";

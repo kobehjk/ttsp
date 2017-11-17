@@ -13,7 +13,7 @@ import org.kobehjk.net.support.okhttp.request.OkHttpRequest;
 import java.io.File;
 
 /**
- * Created by sunger on 2015/11/28.
+ * Created by kobehjk on 2015/11/28.
  */
 public class EditUserInfoModel {
 

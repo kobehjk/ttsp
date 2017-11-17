@@ -10,7 +10,7 @@ import org.kobehjk.net.presenter.EditUserInfoPresenter;
 import org.kobehjk.net.support.okhttp.callback.ResultCallback;
 
 /**
- * Created by sunger on 2015/11/28.
+ * Created by kobehjk on 2015/11/28.
  */
 public class EditUserInfoPresenterImpl implements EditUserInfoPresenter {
     private EditUserInfoModel model;

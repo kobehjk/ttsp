@@ -14,7 +14,7 @@ import kobehjk.org.demo.R;
 
 
 /**
- * Created by sunger on 2015/10/23.
+ * Created by kobehjk on 2015/10/23.
  */
 public abstract class MediasFragment extends LoadMoreRecyclerFragemnt implements MediasView, MediasAdapter.OnItemClickListener {
     protected static final String KEY_UID = "uid";

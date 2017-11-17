@@ -10,7 +10,7 @@ import org.kobehjk.net.support.okhttp.callback.ResultCallback;
 import org.kobehjk.net.support.okhttp.request.OkHttpRequest;
 
 /**
- * Created by sunger on 2015/11/19.
+ * Created by kobehjk on 2015/11/19.
  */
 public class ResetPasswordModel   {
 

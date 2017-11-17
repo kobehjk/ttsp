@@ -6,7 +6,7 @@ import android.support.v4.app.Fragment;
 import org.kobehjk.net.ui.activity.BaseCompatActivity;
 
 /**
- * Created by sunger on 15/12/1.
+ * Created by kobehjk on 15/12/1.
  */
 public class BaseFragment extends Fragment {
 

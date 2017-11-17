@@ -3,7 +3,7 @@ package org.kobehjk.net.ui.widget;
 import android.support.design.widget.TextInputLayout;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public abstract class TextWatcher implements android.text.TextWatcher {
     public String getEditString() {

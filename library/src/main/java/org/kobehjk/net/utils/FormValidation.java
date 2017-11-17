@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import java.util.regex.Pattern;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public class FormValidation {
 

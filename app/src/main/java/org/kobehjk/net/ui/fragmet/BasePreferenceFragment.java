@@ -4,7 +4,7 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 
 /**
- * Created by sunger on 2015/11/28.
+ * Created by kobehjk on 2015/11/28.
  */
 public class BasePreferenceFragment extends PreferenceFragment {
 

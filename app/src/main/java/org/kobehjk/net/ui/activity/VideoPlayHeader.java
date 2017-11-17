@@ -35,7 +35,7 @@ import com.qq.e.comm.util.AdError;
 
 
 /**
- * Created by sunger on 2015/12/1.
+ * Created by kobehjk on 2015/12/1.
  */
 public class VideoPlayHeader {
 

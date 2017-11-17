@@ -11,7 +11,7 @@ import org.kobehjk.net.presenter.ResetPasswordPresenter;
 import org.kobehjk.net.support.okhttp.callback.ResultCallback;
 
 /**
- * Created by sunger on 2015/11/19.
+ * Created by kobehjk on 2015/11/19.
  */
 public class ResetPasswordPresenterImpl implements ResetPasswordPresenter {
     private ResetPasswordView view;

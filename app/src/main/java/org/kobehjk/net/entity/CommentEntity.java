@@ -1,7 +1,7 @@
 package org.kobehjk.net.entity;
 
 /**
- * Created by sunger on 2015/11/11.
+ * Created by kobehjk on 2015/11/11.
  */
 public class CommentEntity {
     private int id;

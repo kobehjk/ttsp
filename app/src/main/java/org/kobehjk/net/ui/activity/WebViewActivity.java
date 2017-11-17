@@ -22,7 +22,7 @@ import org.kobehjk.net.utils.ResourcesUtils;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/16.
+ * Created by kobehjk on 2015/11/16.
  */
 public class WebViewActivity extends BaseCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
     private static final String KEY_URL = "url";

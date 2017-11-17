@@ -14,7 +14,7 @@ import org.kobehjk.net.support.okhttp.request.OkHttpRequest;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/11/10.
+ * Created by kobehjk on 2015/11/10.
  */
 public class PlayVideoModel  {
     /**

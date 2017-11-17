@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 首页栏目分类
- * Created by sunger on 2015/10/26.
+ * Created by kobehjk on 2015/10/26.
  */
 
 public class CategoryEntity  implements Serializable {

@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * Created by sunger on 2015/10/29.
+ * Created by kobehjk on 2015/10/29.
  * 正方形布局，用于gridView item
  */
 public class SquareLayout extends RelativeLayout {

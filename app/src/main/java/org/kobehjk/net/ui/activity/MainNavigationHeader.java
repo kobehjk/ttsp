@@ -16,7 +16,7 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 15/11/21.
+ * Created by kobehjk on 15/11/21.
  */
 public class MainNavigationHeader implements View.OnClickListener {
     private BGABadgeImageView mImageViewAvatar;

@@ -15,7 +15,7 @@ import org.kobehjk.net.R;
 import org.kobehjk.net.app.App;
 
 /**
- * Created by sunger on 2015/11/16.
+ * Created by kobehjk on 2015/11/16.
  */
 public class UiHelper {
     public static Dialog createListDialog(Context context, String[] data, DialogInterface.OnClickListener listener) {

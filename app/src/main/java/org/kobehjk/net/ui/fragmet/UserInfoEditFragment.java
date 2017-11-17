@@ -40,7 +40,7 @@ import java.io.File;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/27.
+ * Created by kobehjk on 2015/11/27.
  */
 public class UserInfoEditFragment extends BasePreferenceFragment implements OnPreferenceClickListener, EditUserInfoView {
     private static final String IMAGEPATH = SdcardUtils.getSdcardPath() + "meiPai/Image/avatar/";

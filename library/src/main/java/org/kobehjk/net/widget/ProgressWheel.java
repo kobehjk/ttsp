@@ -21,7 +21,7 @@ import org.kobehjk.net.R;
 
 
 /**
- * Created by sunger on 2015/10/30.
+ * Created by kobehjk on 2015/10/30.
  */
 public class ProgressWheel  extends View {
     private static final String TAG = ProgressWheel.class.getSimpleName();

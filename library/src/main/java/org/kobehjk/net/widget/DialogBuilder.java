@@ -1,7 +1,7 @@
 package org.kobehjk.net.widget;
 
 /**
- * Created by sunger on 15/11/15.
+ * Created by kobehjk on 15/11/15.
  */
 import android.app.Dialog;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.view.Window;
 
 /**
  * 没有系统头部的dialog
- * Created by sunger on 15/5/29.
+ * Created by kobehjk on 15/5/29.
  */
 public class DialogBuilder {
     private  Context context;

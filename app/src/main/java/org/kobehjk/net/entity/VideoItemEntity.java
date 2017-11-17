@@ -3,7 +3,7 @@ package org.kobehjk.net.entity;
 import java.io.Serializable;
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class VideoItemEntity implements Serializable {
     private String recommend_caption;

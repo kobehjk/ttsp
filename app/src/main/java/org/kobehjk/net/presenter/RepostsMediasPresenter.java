@@ -1,7 +1,7 @@
 package org.kobehjk.net.presenter;
 
 /**
- * Created by sunger on 2015/12/2.
+ * Created by kobehjk on 2015/12/2.
  */
 public interface RepostsMediasPresenter {
 

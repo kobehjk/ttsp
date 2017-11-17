@@ -41,7 +41,7 @@
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/imageView_avatar"
             android:layout_toRightOf="@+id/imageView_avatar"
-            android:text="Sunger" />
+            android:text="kobehjk" />
 
         <ImageView
             android:id="@+id/imageView_gender"

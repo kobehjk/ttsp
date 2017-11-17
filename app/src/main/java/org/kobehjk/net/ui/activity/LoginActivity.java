@@ -19,7 +19,7 @@ import org.kobehjk.net.utils.WidgetUtils;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public class LoginActivity extends BaseCompatActivity implements LoginView, View.OnClickListener {
     private LoginPresenter mPresenter;

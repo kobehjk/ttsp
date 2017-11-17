@@ -20,7 +20,7 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 15/11/8.
+ * Created by kobehjk on 15/11/8.
  */
 public class CommentsAdapter extends BaseLoadMoreRecyclerAdapter<CommentEntity, CommentsAdapter.ViewHolder> {
     private Activity mActivity;

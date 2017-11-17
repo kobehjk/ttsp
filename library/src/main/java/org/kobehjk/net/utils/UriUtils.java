@@ -11,7 +11,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
 /**
- * Created by sunger on 15/11/29.
+ * Created by kobehjk on 15/11/29.
  */
 public class UriUtils {
 

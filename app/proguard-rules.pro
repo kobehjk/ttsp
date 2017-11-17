@@ -37,5 +37,5 @@
 -dontwarn com.google.**
 -keep class com.google.**{*;}
 # 自己的实体类
--keep class org.sunger.net.entity.** { *; }
+-keep class org.kobehjk.net.entity.** { *; }
 

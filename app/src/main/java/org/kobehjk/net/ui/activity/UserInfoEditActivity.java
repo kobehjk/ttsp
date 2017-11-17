@@ -11,7 +11,7 @@ import org.kobehjk.net.ui.fragmet.UserInfoEditFragment;
 import kobehjk.org.demo.R;
 
 /**
- * Created by sunger on 15/11/26.
+ * Created by kobehjk on 15/11/26.
  */
 public class UserInfoEditActivity extends BaseCompatActivity {
     private UserInfoEditFragment mUserInfoEditFragment;

@@ -1,7 +1,7 @@
 package org.kobehjk.net.view;
 
 /**
- * Created by sunger on 2015/11/17.
+ * Created by kobehjk on 2015/11/17.
  */
 public interface LoginView {
 

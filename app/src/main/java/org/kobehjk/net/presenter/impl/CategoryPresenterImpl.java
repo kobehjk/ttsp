@@ -11,7 +11,7 @@ import org.kobehjk.net.view.CategoryView;
 import java.util.List;
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class CategoryPresenterImpl implements CategoryPresenter {
 

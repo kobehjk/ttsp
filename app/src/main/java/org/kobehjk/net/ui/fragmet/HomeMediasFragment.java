@@ -33,7 +33,7 @@ import kobehjk.org.demo.R;
 
 
 /**
- * Created by sunger on 2015/10/23.
+ * Created by kobehjk on 2015/10/23.
  */
 public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMediasView, MediasAdapter.OnItemClickListener {
     private static final String KEY_VIDEO_ID = "id";

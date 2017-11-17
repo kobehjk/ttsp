@@ -1,7 +1,7 @@
 package org.kobehjk.net.entity;
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class MediaEntity extends SimpleMediaEntity {
     private String caption;

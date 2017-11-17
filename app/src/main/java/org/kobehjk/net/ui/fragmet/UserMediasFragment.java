@@ -8,7 +8,7 @@ import org.kobehjk.net.presenter.impl.UserMediasPresenterImpl;
 
 
 /**
- * Created by sunger on 2015/10/23.
+ * Created by kobehjk on 2015/10/23.
  */
 public class UserMediasFragment extends MediasFragment {
     private UserMediasPresenter mPresenter;

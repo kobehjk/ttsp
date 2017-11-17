@@ -11,7 +11,7 @@ import org.kobehjk.net.utils.DeviceUtils;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by sunger on 2015/10/27.
+ * Created by kobehjk on 2015/10/27.
  */
 public class App extends Application {
     private static final int CONNECT_TIMEOUT_MILLIS = 10 * 1000; // 15s
