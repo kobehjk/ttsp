@@ -52,7 +52,7 @@ allprojects {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
@@ -67,7 +67,8 @@ dependencies {
     compile project(':MaterialDesign')
     compile project(':library')
     compile project(':vitamio')
-//    compile project(':VitamioLibrary5.0')
-//    compile 'com.umeng.analytics:analytics:latest.integration'
-    compile 'com.google.android.gms:play-services-ads:11.4.2'
+    //    compile project(':VitamioLibrary5.0')
+    //    compile 'com.umeng.analytics:analytics:latest.integration'
+    //    compile 'com.google.android.gms:play-services-ads:11.4.2'
+    compile files('D:/githubSource/ddsp/libs/GDTUnionSDK.4.12.553.min.jar')
 }

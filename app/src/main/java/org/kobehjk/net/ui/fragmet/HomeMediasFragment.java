@@ -4,11 +4,20 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
+/*MobAD
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
+**/
 
+import com.qq.e.ads.interstitial.AbstractInterstitialADListener;
+import com.qq.e.ads.interstitial.InterstitialAD;
+import com.qq.e.ads.interstitial.InterstitialADListener;
+import com.qq.e.comm.util.AdError;
+
+import org.kobehjk.net.api.Constants;
 import org.kobehjk.net.entity.MediaEntity;
 import org.kobehjk.net.support.recyclerview.MGridLayoutManager;
 import org.kobehjk.net.ui.activity.MainActivity;
@@ -39,8 +48,12 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
     private int id;
     private int type;
 
+//MobAd
+//    private InterstitialAd mInterstitialAd;
 
-    private InterstitialAd mInterstitialAd;
+//GTDAd
+    private InterstitialAD iad;
+    private boolean loadSuccess = false;
 
 
     public static Fragment newInstance(int id, int type) {
@@ -56,6 +69,7 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
     public void onAttach(Context context) {
         super.onAttach(context);
         mainActivity = (MainActivity) context;
+
     }
 
     @Override
@@ -83,6 +97,7 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new MGridLayoutManager(getActivity(), GRID_COLUMN, mAdapter));
         autoRefresh();
+        /*MobAd
         mInterstitialAd = new InterstitialAd(mainActivity);
         mInterstitialAd.setAdUnitId("ca-app-pub-2364076622212252/1238664018");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
@@ -94,6 +109,9 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
             }
 
         });
+        **/
+        //GTDAd
+        showAD();
     }
 
     private void autoRefresh() {
@@ -132,6 +150,7 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
 
     @Override
     public void onItemClick(MediaEntity entity) {
+        /* MobAd
         if (mInterstitialAd.isLoaded()&& mainActivity.watchCount == 4) {
             mainActivity.watchCount = 0;
             startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
@@ -140,7 +159,45 @@ public class HomeMediasFragment extends RefreshAndLoadFragment implements HomeMe
             mainActivity.watchCount++;
             startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
         }
+        **/
+        if (loadSuccess && mainActivity.watchCount == 4) {
+            mainActivity.watchCount = 0;
+            loadSuccess = false;
+            iad.loadAD();
+            startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
+            iad.show();
+        } else {
+            mainActivity.watchCount++;
+            startActivity(VideoPlayActivity.createIntent(getActivity(), entity.getId()));
+        }
+    }
 
+    private InterstitialAD getIAD() {
+        if (iad == null) {
+            iad = new InterstitialAD(mainActivity, Constants.APPID, Constants.InterteristalPosID);
+        }
+        return iad;
+    }
+
+    private void showAD() {
+        getIAD().setADListener(new AbstractInterstitialADListener() {
+
+            @Override
+            public void onNoAD(AdError error) {
+                Log.i(
+                        "AD_DEMO",
+                        String.format("LoadInterstitialAd Fail, error code: %d, error msg: %s",
+                                error.getErrorCode(), error.getErrorMsg()));
+            }
+
+            @Override
+            public void onADReceive() {
+                Log.i("AD_DEMO", "onADReceive");
+                loadSuccess = true;
+//                iad.show();
+            }
+        });
+        iad.loadAD();
     }
 
 

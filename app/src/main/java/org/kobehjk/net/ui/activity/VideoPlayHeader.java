@@ -3,14 +3,20 @@ package org.kobehjk.net.ui.activity;
 import android.app.Activity;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+//MobAD
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdView;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdSize;
+//import com.google.android.gms.ads.AdView;
 
+import org.kobehjk.net.api.Constants;
 import org.kobehjk.net.app.AppUtils;
 import org.kobehjk.net.entity.MediaEntity;
 import org.kobehjk.net.utils.DateUtils;
@@ -21,9 +27,12 @@ import cn.bingoogolapple.badgeview.BGABadgeImageView;
 import kobehjk.org.demo.R;
 
 import android.util.Log;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
+
+import com.qq.e.ads.banner.ADSize;
+import com.qq.e.ads.banner.AbstractBannerADListener;
+import com.qq.e.ads.banner.BannerView;
+import com.qq.e.comm.util.AdError;
+
 
 /**
  * Created by sunger on 2015/12/1.
@@ -43,8 +52,12 @@ public class VideoPlayHeader {
     private TextView mTextViewThumbUp;
     private TextView mTextViewRepeat;
     private Activity mActivity;
+//MobAd
+//    private AdView mAdView;
 
-    private AdView mAdView;
+    //GTDAd
+    private ViewGroup bannerContainer;
+    private BannerView bv;
 
     public VideoPlayHeader(Activity activity, View view) {
         this.mActivity = activity;
@@ -62,6 +75,7 @@ public class VideoPlayHeader {
         mTextViewThumbUp = (TextView) view.findViewById(R.id.textView_thumb_up);
         mTextViewRepeat = (TextView) view.findViewById(R.id.textView_repeat);
 
+        bannerContainer = (ViewGroup) view.findViewById(R.id.bannerContainer);
     }
 
     public void bindData(final MediaEntity mediaEntity) {
@@ -97,17 +111,48 @@ public class VideoPlayHeader {
         } else {
             mImageViewThumbUp.setImageResource(R.mipmap.ic_thumb_up_white_18dp);
         }
+
+        initBanner();
+        bv.loadAD();
     }
     public VideoControllerView getVideoControllerView() {
         return mVideoControllerView;
     }
 
+
+    private void initBanner() {
+        this.bv = new BannerView(mActivity, ADSize.BANNER, Constants.APPID, Constants.BannerPosID);
+        // 注意：如果开发者的banner不是始终展示在屏幕中的话，请关闭自动刷新，否则将导致曝光率过低。
+        // 并且应该自行处理：当banner广告区域出现在屏幕后，再手动loadAD。
+        bv.setRefresh(30);
+        bv.setADListener(new AbstractBannerADListener() {
+
+            @Override
+            public void onNoAD(AdError error) {
+                Log.i(
+                        "AD_DEMO",
+                        String.format("Banner onNoAD，eCode = %d, eMsg = %s", error.getErrorCode(),
+                                error.getErrorMsg()));
+            }
+
+            @Override
+            public void onADReceiv() {
+                Log.i("AD_DEMO", "ONBannerReceive");
+            }
+        });
+        bannerContainer.addView(bv);
+    }
+
     private void initAdView(Activity activity, View view){
+        /*
+        MobAd
+
         mAdView = (AdView)view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .build();
-//        Log.d("kobehjkddsp",String.valueOf(adRequest.isTestDevice(activity)) );
+        Log.d("kobehjkddsp",String.valueOf(adRequest.isTestDevice(activity)) );
         mAdView.loadAd(adRequest);
+        **/
     }
 
 

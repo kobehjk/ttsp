@@ -8,8 +8,18 @@
     <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
     <!--<uses-permission android:name="android.permission.INTERNET"/>-->
 
-
     <!-- -->
+
+    <!-- 广点通权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />    <!-- 如果需要精确定位的话请加上此权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- -->
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -83,6 +93,14 @@
         <meta-data android:value="59f93413b27b0a7776000014" android:name="UMENG_APPKEY"/>
         <meta-data android:value="Android" android:name="UMENG_CHANNEL"/>
 
+        //GDT
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"/>
+        <!-- 请开发者注意字母的大小写，ADActivity，而不是AdActivity -->
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
     </application>
 
 </manifest>
